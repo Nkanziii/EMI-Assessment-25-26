@@ -7,5 +7,5 @@ You should have at least 10 dated entries in your weblog describing your iterati
 Brainstorming project ideas, I want to lean towards
 
 <p align='center'>
-  <img src="Assets/research/brain-storm.jpg" width='400'/>
+  <img src="assets/research/brain-storm.jpg" width='400'/>
 </p>
