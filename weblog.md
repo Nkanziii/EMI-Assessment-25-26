@@ -14,8 +14,13 @@ Brainstorming project ideas, I want to lean towards
 Diving deeper into my project idea, I didn't feel too emotionally drawn to the context of my previous idea, I wanted to add onto the theme of creating a machine leanering model that inputs peoples emotions via webcam and creating a visual generative video based on this. I felt as though this was quite boring and mundane there was no emotional attachment to this. Therefore, I have decided that I want to explore a more sensitive but emotionally compelling theme of using news data and headlines instead.
 
 <h3>Project Concept: 'The news as a nervous System'</h3>
-Creating a Machine learning system trained on live news data (as input) that classifies the emotional state of the current world events, measuring fear, anger, sadness and hope.
-Outputs a real time abstract visual in p5.js that responds to those emotional scores.
+<p>Creating a Machine learning system trained on live news data (as input) that classifies the emotional state of the current world events, measuring fear, anger, sadness and hope.
+Outputs a real time abstract visual in p5.js that responds to those emotional scores.</p>
+
+
+<p align='center'>
+  <img src='assets/research/brain.jpg' width='800'/>
+</p>
 
 <h4>The ML part:</h4>
 <ul>
@@ -29,3 +34,8 @@ Outputs a real time abstract visual in p5.js that responds to those emotional sc
 I wanted to make this project abit personal to me, as i often do with my projects, i feel like it relates more to an audience that also likes emotional attachment with artistic and technical pieces. I want to be attached to my pieces and create something i know alot of people will resonate with as well. My thought process actually came from how the current news and state of the world especially in the Middle East affected me and my family as well as many other people in the same situation. Coming from Iran watching the current state of the world is genuinely devestating, and with the rest of my family living with bombs dropping next to their houses, I feel bad that this is their reality and they cannot leave and we can not visit our motherland. I always knew that the news affects everyone differently and there is always negative emotions. However, for the first time i saw how it psychologically transformed one of my family members, making them relaps into psychosis and schitzophrenic episodes. She, disasociated with her reality and lost herself into a deep psychological parallel reality, because shes scared for the state of Iran and when can she go back to see her family. I was terrified of the hellucinations i was hearing about, and started to witness and understand a whole different level of psychological trauma about hearing unsettling news. Which is why I wanted to name this project 'The News as a Nervous System'. 
 
 <h3>Artist references</h3>
+
+<p align='center'>
+  <img src='assets/research/refil.jpg' width='800'/> 
+  <img src='assets/research/ryoji.jpg' width='800'/> 
+</p>
