@@ -49,3 +49,15 @@ So far in the project I have:
   <li>Wrote python script to pull live headlines</li>
   <li>Tested a pre-trained emotion model from huggingFace</li>
 </ul>
+
+<p align='center'>
+  <img src='assets/step-1/newsApi.png' />
+</p>
+
+This is the news api website where I got a personalised api key to include in my python code to grab current trending news data.
+
+<p align='center'>
+  <img src='assets/step-1/hugginFace.png' />
+</p>
+
+This is the huggingFace website where I found my pre-trained emotion model and attached this model to detect the emotional states of news headlines i got from the news Api.
