@@ -61,3 +61,7 @@ This is the news api website where I got a personalised api key to include in my
 </p>
 
 This is the huggingFace website where I found my pre-trained emotion model and attached this model to detect the emotional states of news headlines i got from the news Api.
+
+<h4>current code</h4>
+
+[news.ipynb]('assets/code/news.ipynb')
