@@ -65,8 +65,7 @@ Bloggs, J. (2013). 'The key issue'. [Cartoon]. *The Times*, 20 January, p.56.
 
 
 [newsapi.org](https://newsapi.org/) [Accessed on 18.05.2026]
+
 [HuggingFace](https://huggingface.co/tabularisai/multilingual-emotion-classification) [accessed 15.05.2026]
 
-British Standards Institution (2008). BS 8498:2008: *British Standards for screw threads and screw gauges : introduction and guidance.* London: British Standards Institution. Available at: https://bsol.bsigroup.com/Bibliographic/BibliographicInfoData/000000000030165215. (Accessed: 26 March 2021). 
 
-Bureau van Dijk (2013). ‘BSkyB plc company report’. Available at: http://fame.bvdep.com/ (Accessed: 8 January 2013).
