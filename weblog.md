@@ -64,4 +64,4 @@ This is the huggingFace website where I found my pre-trained emotion model and a
 
 <h4>current code</h4>
 
-[news.ipynb]('assets/code/news.ipynb')
+[news.ipynb](assets/code/news.ipynb)
