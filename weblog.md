@@ -40,5 +40,12 @@ I wanted to make this project abit personal to me, as i often do with my project
   <img src='assets/research/ryoji.jpg' width='800'/> 
 </p>
 
+<h2>Entery 2: 19 May 2026</h2>
 
-sentiment 
+So far in the project I have:
+
+<ul>
+  <li>Got news Api free key at newsApi.org</li>
+  <li>Wrote python script to pull live headlines</li>
+  <li>Tested a pre-trained emotion model from huggingFace</li>
+</ul>
