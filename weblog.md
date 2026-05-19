@@ -39,3 +39,6 @@ I wanted to make this project abit personal to me, as i often do with my project
   <img src='assets/research/refil.jpg' width='800'/> 
   <img src='assets/research/ryoji.jpg' width='800'/> 
 </p>
+
+
+sentiment 
