@@ -68,3 +68,27 @@ This is the huggingFace website where I found my pre-trained emotion model and a
 [news.ipynb](assets/code/news.ipynb)
 
 I used the code from the pre-trained model, as well as claude to help me debug and write some logic.
+
+<h2>Entery 4: 29 May 2026</h2>
+In this entry I wrote a code that cleanes up the emotional score from the news headlines.
+
+```
+all_scores = {}
+
+for headline in headlines[:5]:
+    result = emotion_model(headline[0])
+    print(result)
+    for emotion in result[0]:
+        label = emotion["label"]
+        score = emotion["score"]
+
+        if label not in all_scores:
+          all_scores[label] = 0  
+        all_scores[label] += score 
+
+print(all_scores)
+
+for label in all_scores:
+   all_scores[label] = all_scores[label] / len(headlines)
+print(all_scores)
+```
