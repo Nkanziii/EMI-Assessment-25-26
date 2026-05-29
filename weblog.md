@@ -94,9 +94,15 @@ print(all_scores)
 ```
 
 <p align='center'>
-  <img src="/assets/week-2/week-2.png" width="900"/>
+  <img src="/assets/week-2/week-2.png"/>
 </p>
 
 The results are visible at the bottom, which is the average scores of the different emotional states.
 
-<</p>
+<p align="center">
+  <img src="/assets/week-2/get_prompt.png"/>
+
+I wrote a function that prints me the highest score from all the news headline emotional scores, to then create a prompt for image generation later on, I want my model to create a Image based on the emotional score and prompt it recieves.
+The output after running the the code block, creating a prompt for the image generator is "grey static, empty void, quiet desolation", which means neutral is the dominant emotion in today's news. Which I found quiet interesting, since the model reads the news as mostyl neutral, which says something about how news language is written to sound objective even when the content is devestation. Which I am not sure if I really like that its sticking with neutral I want it to reflect the devestation that is resonated with me.
+
+</p>
