@@ -95,9 +95,9 @@ print(all_scores)
 
 <p align='center'>
   <img src="/assets/week-2/week-2.png"/>
+  The results are visible at the bottom, which is the average scores of the different emotional states.
 </p>
 
-The results are visible at the bottom, which is the average scores of the different emotional states.
 
 <p align="center">
   <img src="/assets/week-2/get_prompt.png"/>
