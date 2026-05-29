@@ -58,15 +58,19 @@ So far in the project I have:
 
 <p align='center'>
   <img src='assets/step-1/newsApi.png' />
+
+  
+This is the news api website where I got a personalised api key to include in my python code to grab current trending news data.
+
 </p>
 
-This is the news api website where I got a personalised api key to include in my python code to grab current trending news data.
 
 <p align='center'>
   <img src='assets/step-1/hugginFace.png' />
+
+  This is the huggingFace website where I found my pre-trained emotion model and attached this model to detect the emotional states of news headlines i got from the news Api.
 </p>
 
-This is the huggingFace website where I found my pre-trained emotion model and attached this model to detect the emotional states of news headlines i got from the news Api.
 
 <h4>current code</h4>
 
