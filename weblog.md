@@ -3,14 +3,14 @@
 You should have at least 10 dated entries in your weblog describing your iterative progress on your project. The clarity and completeness of your weblog is an integral part of your project and its marking.
 
 
-<h2>Entry 1: 8 May 2026</h2> 
+<h2>Entry 1 (8 May 2026)</h2> 
 Brainstorming project ideas, I want to lean towards
 
 <p align='center'>
   <img src="assets/research/brain-storm.jpg" width='400'/>
 </p>
 
-<h2>Entery 2: 12 May 2026</h2>
+<h2>Entery 2 (12 May 2026)</h2>
 Diving deeper into my project idea, I didn't feel too emotionally drawn to the context of my previous idea, I wanted to add onto the theme of creating a machine leanering model that inputs peoples emotions via webcam and creating a visual generative video based on this. I felt as though this was quite boring and mundane there was no emotional attachment to this. Therefore, I have decided that I want to explore a more sensitive but emotionally compelling theme of using news data and headlines instead.
 
 <h3>Project Concept: 'The news as a nervous System'</h3>
@@ -41,7 +41,7 @@ I wanted to make this project abit personal to me, as i often do with my project
   <img src='assets/research/ryoji.jpg' width='800'/> 
 </p>
 
-<h2>Entery 3: 19 May 2026</h2>
+<h2>Entery 3 (19 May 2026)</h2>
 
 So far in the project I have:
 
@@ -69,7 +69,7 @@ This is the huggingFace website where I found my pre-trained emotion model and a
 
 I used the code from the pre-trained model, as well as claude to help me debug and write some logic.
 
-<h2>Entery 4: 29 May 2026</h2>
+<h2>Entery 4 (29 May 2026)</h2>
 In this entry I wrote a code that cleanes up the emotional score from the news headlines.
 
 ```
@@ -92,3 +92,9 @@ for label in all_scores:
    all_scores[label] = all_scores[label] / len(headlines)
 print(all_scores)
 ```
+
+<p align='center'>
+  <img src="/assets/week-2/week-2.png" width="900"/>
+</p>
+
+The results are visible at the bottom, which is the average scores of the different emotional states.
