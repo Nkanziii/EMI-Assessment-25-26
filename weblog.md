@@ -118,7 +118,7 @@ The output after running the the code block, creating a prompt for the image gen
 
 </p>
 
-Entery 5 (17th june 2026)
+<h2>Entery 5 (17th june 2026)</h2>
 
 In todays session, I went through 03_StableDiffusion_animation.ipynb, to generate my propmts from the my previous step into images. The current prompt is:
 
@@ -145,3 +145,5 @@ prompt = get_prompt()
 print(prompt)
 
 ```
+
+
