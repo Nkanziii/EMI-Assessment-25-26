@@ -199,5 +199,5 @@ def get_prompt():
   This image was abit more complex which i find quite interesting I changed the prompt description to give me the top 3 emotions from the headlines and create a image based on that.
 </p>
 
-
+An observation i found is that the model keeps printing the news headlines as neutrsl, as if it doesnt want to induldge in reality of the news, I dont like this, because majority of the time the news is not neutral, I removed that emotion to see what it calculates if it doesnt have neutral as an option.
 
