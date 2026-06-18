@@ -161,7 +161,7 @@ Library version conflicts between diffusers, transformers, and huggingface_hub c
 
 The reward, after all of that, the full pipeline ran end to end for the first time. Live news headlines -> emotion classification -> averaged scores -> prompt generation -> Stable Diffusion image. The output was a grey desolate abstract image, matching the 'neutral' dominant emotion of today's news cycle.
 
-<h2>Step 6</h2>
+<h2>Entry 6</h2>
 
 <h3>Generating different images based on prompts</h3>
 
@@ -200,4 +200,37 @@ def get_prompt():
 </p>
 
 An observation i found is that the model keeps printing the news headlines as neutrsl, as if it doesnt want to induldge in reality of the news, I dont like this, because majority of the time the news is not neutral, I removed that emotion to see what it calculates if it doesnt have neutral as an option.
+
+<h2>Entry 7</h2>
+
+<h4>Changing the prompt</h4>
+
+I changed the code again and removed neutral as an option for emotion:
+
+```
+def get_prompt():
+    #finding the highest emotional score
+    top_emotions = sorted(all_scores, key=all_scores.get, reverse=True)
+    top_emotions = [e for e in top_emotions if e != "neutral"][:3]
+
+    descriptions = {
+    "fear": "a rotting pomegranate decaying in darkness, deep red and black, cinematic, highly detailed",
+    "anger": "a burning cracked pomegranate, red orange flames, violent, dramatic lighting, cinematic",
+    "sadness": "a wilting flower dissolving, blue and grey tones, melancholic, cinematic, detailed",
+    "disgust": "rotting organic matter, toxic green and black, unsettling, macro photography",
+    "surprise": "an exploding fruit, vivid colours, electric blue and white, dramatic",
+    "joy": "a blooming flower, warm golden light, vibrant colours, beautiful"
+}
+    
+    prompt_parts = [descriptions[e] for e in top_emotions if e in descriptions]
+    return ", ".join(prompt_parts) + ", no text, no watermark, vivid colours, dramatic lighting"
+```
+
+Interesting enough, the model continues to produce neutral gray destaturated images even when prompted with vivid colours. The AI refuses to fully express the emotional weight of political trauma. However I am determined to break it, I want it to add weight to the emotions and produce a colourful piece.
+
+<p align='center'>
+  <img src="assets/step-3/img-2.jpg"/>
+  <img src="assets/step-3/img-3.jpg"/>
+</p>
+
 
