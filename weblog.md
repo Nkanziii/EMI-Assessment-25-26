@@ -247,3 +247,18 @@ Breakthrough!!
 
   This one is quite disturbing and freaky looking i kind of like it.
 </p>
+
+
+<p align='center'>
+  <img src="assets/step-3/image-6.jpg"/>
+  <img src="assets/step-3/image-6.2.png"/>
+</p>
+
+I wrote this at the end to clearly tell me the top 3 emotions it used and the prompt as well, 
+
+```
+print("Top emotions:", top_emotions)
+print("Prompt:", prompt)
+```
+
+I thought i had a breakthrough but it still uses neutral however, neutral doesnt dominate the entire image now and is not the main emotion so i am pleased about that. 
