@@ -161,3 +161,6 @@ Library version conflicts between diffusers, transformers, and huggingface_hub c
 
 The reward, after all of that, the full pipeline ran end to end for the first time. Live news headlines -> emotion classification -> averaged scores -> prompt generation -> Stable Diffusion image. The output was a grey desolate abstract image, matching the 'neutral' dominant emotion of today's news cycle.
 
+<h2>Step 6</h2>
+
+
