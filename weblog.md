@@ -262,3 +262,38 @@ print("Prompt:", prompt)
 ```
 
 I thought i had a breakthrough but it still uses neutral however, neutral doesnt dominate the entire image now and is not the main emotion so i am pleased about that. 
+
+
+I created a moodboard based on the emotions i found, and i adjusted the code prompt based on the images of the moodboard:
+
+```
+def get_prompt():
+    top_emotions = sorted(all_scores, key=all_scores.get, reverse=True)
+    top_emotions = [e for e in top_emotions if e != "neutral"][:3]
+
+    descriptions = {
+        "anger": "a dark dissolving figure consumed by red smoke, blurred and fractured form, deep crimson and black, violent motion, abstract painterly style, dramatic lighting, no text, vivid colours",
+        "sadness": "a face dissolving into darkness, tears streaming down, black and white, high contrast, raw grief, cinematic portrait, dramatic shadow, no text, highly detailed, melancholic",
+        "fear": "an abstract painted face, hollow wide eyes, stark white and black, expressive brushstrokes, mask-like distorted features, dark void background, raw terror, painterly style, high contrast, no text",
+        "disgust": "a rotting pomegranate split open, decaying organic matter, mould spreading across the surface, toxic green and deep red, visceral and repulsive, macro photography, dramatic lighting, no text, vivid colours",
+        "surprise": "a wide eyed abstract face, eyes enormous and hollow, shocked open mouth, black and white high contrast, vintage photographic style, dramatic shadow, frozen in disbelief, no text, cinematic",
+        "joy": "golden sunlight bursting through flowering trees, warm lens flare, vibrant greens and yellows, light flooding through leaves, joyful and alive, cinematic, warm tones, no text, beautiful"
+    }
+
+    prompt_parts = [descriptions[e] for e in top_emotions if e in descriptions]
+    return ", ".join(prompt_parts) + ", no text, no watermark, vivid colours, dramatic lighting"
+
+prompt = get_prompt()
+print(prompt)
+
+```
+
+<p align='center'>
+  <img src="assets/step-3/img-7.jpg"/>
+  <img src="assets/step-3/img-8.jpg"/>
+</p>
+
+```
+Top emotions: ['neutral', 'anger', 'sadness']
+Prompt: a dark dissolving figure consumed by red smoke, blurred and fractured form, deep crimson and black, violent motion, abstract painterly style, dramatic lighting, no text, vivid colours, a face dissolving into darkness, tears streaming down, black and white, high contrast, raw grief, cinematic portrait, dramatic shadow, no text, highly detailed, melancholic, a rotting pomegranate split open, decaying organic matter, mould spreading across the surface, toxic green and deep red, visceral and repulsive, macro photography, dramatic lighting, no text, vivid colours, no text, no watermark, vivid colours, dramatic lighting
+```
