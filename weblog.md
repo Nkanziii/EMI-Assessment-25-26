@@ -236,3 +236,8 @@ Interesting enough, the model continues to produce neutral gray destaturated ima
 
 Breakthrough!!
 
+<p align='center'>
+  <img src="assets/step-3/image-4.jpg"/>
+</p>
+
+It produced this image from the top 3 emotions which is: fear, anger and sadness.
