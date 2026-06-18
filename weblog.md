@@ -163,4 +163,41 @@ The reward, after all of that, the full pipeline ran end to end for the first ti
 
 <h2>Step 6</h2>
 
+<h3>Generating different images based on prompts</h3>
+
+<p align="center">
+  <img src="assets/step-3/img.jpg"/>
+
+  In this image i just used the prompt i mentioned earlier, simple abstract gray scale, however It seemed too simple and vague and I wanted more complex images to be generated.
+
+</p>
+
+I updated my get_prompt() function and the image below is what the ai created.
+
+```
+def get_prompt():
+    #finding the highest emotional score
+    top_emotions = sorted(all_scores, key=all_scores.get, reverse=True)[:3]
+
+    descriptions = {
+    "fear": "a rotting fruit decaying in darkness, black mould spreading, dramatic lighting",
+    "anger": "a burning cracked pomegranate, red flames, violent fracture",
+    "sadness": "a wilting flower dissolving into grey dust, slow decay, muted tones",
+    "disgust": "rotting organic matter, toxic green mould, unsettling decay",
+    "surprise": "an exploding fruit, scattered fragments, electric blue light",
+    "neutral": "a single grey fruit sitting in empty void, quiet, still",
+    "joy": "a blooming flower, warm golden light, flowing organic forms"
+}
+    
+    prompt_parts = [descriptions[e] for e in top_emotions if e in descriptions]
+    return ", ".join(prompt_parts)
+```
+
+<p align='center'>
+  <img src="assets/step-3/img-1.jpg"/>
+
+  This image was abit more complex which i find quite interesting I changed the prompt description to give me the top 3 emotions from the headlines and create a image based on that.
+</p>
+
+
 
