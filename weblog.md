@@ -238,6 +238,8 @@ Breakthrough!!
 
 <p align='center'>
   <img src="assets/step-3/image-4.jpg"/>
+  
+  It produced this image from the top 3 emotions which is: fear, anger and sadness.
 </p>
 
-It produced this image from the top 3 emotions which is: fear, anger and sadness.
+
