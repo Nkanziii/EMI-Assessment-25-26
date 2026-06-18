@@ -146,4 +146,18 @@ print(prompt)
 
 ```
 
+<p>
+  <img src="assets/step-3/image-gen.png"/>
+</p>
+
+This is the image that was generated based on my prompt, abit vague but now i know that the image generation is actually working. 
+
+I did face a couple challanges trying to get this to work, firstly:
+getting the emotion model to run was the first major obstacle. The EMI kernel has troch 2.12 installed but most HuggingFace models required a newer version. Several models crashed the kernel entirely. Eventually solved by pinning transformers to version 4.30.0 and using device =-1 to force   CPU mode. 
+
+Network restrictions was the second big challenge. The HuggingFace Inference API was completely blocked on UAL wifi, even switching to a personal hotspot didn't immediately fix it because the Mac was still routing through university network. Eventually discovered that urllib could reach huggingFace.co but requests couldn't, pointing to a DNS issue specific to the EMI kernel's network configuration.
+
+Library version conflicts between diffusers, transformers, and huggingface_hub caused repeated ImportErrors. diffusers 0 .14.0 was incompatible with the installed huggingface_hub. Solution was pinning all three libraries to compatible versions: `transformers==4.30.0, diffusers==0.21.0, huggingface_hub==0.16.4`.
+
+The reward, after all of that, the full pipeline ran end to end for the first time. Live news headlines -> emotion classification -> averaged scores -> prompt generation -> Stable Diffusion image. The output was a grey desolate abstract image, matching the 'neutral' dominant emotion of today's news cycle.
 
