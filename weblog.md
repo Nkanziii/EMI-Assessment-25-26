@@ -242,4 +242,8 @@ Breakthrough!!
   It produced this image from the top 3 emotions which is: fear, anger and sadness.
 </p>
 
+<p align='center'>
+  <img src="assets/step-3/image-5.jpg"/>
 
+  This one is quite disturbing and freaky looking i kind of like it.
+</p>
