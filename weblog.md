@@ -117,3 +117,31 @@ I wrote a function that prints me the highest score from all the news headline e
 The output after running the the code block, creating a prompt for the image generator is "grey static, empty void, quiet desolation", which means neutral is the dominant emotion in today's news. Which I found quiet interesting, since the model reads the news as mostyl neutral, which says something about how news language is written to sound objective even when the content is devestation. Which I am not sure if I really like that its sticking with neutral I want it to reflect the devestation that is resonated with me.
 
 </p>
+
+Entery 5 (17th june 2026)
+
+In todays session, I went through 03_StableDiffusion_animation.ipynb, to generate my propmts from the my previous step into images. The current prompt is:
+
+```
+def get_prompt():
+    #finding the highest emotional score
+    highest = max(all_scores, key=all_scores.get)
+
+    if highest == "fear":
+        return "dark fragmented abstract, ominous atmosphere, deep red and black"
+    elif highest == "anger":
+        return "violent fracture, burning edges, chaotic turbulence"
+    elif highest == "sadness":
+        return "muted grey dissolution, slow decay, heavy silence"
+    elif highest == "disgust":
+        return "corrupted forms, toxic green and black, unsettling decay"
+    elif highest == "surprise":
+        return "fragmented light, scattered forms, electric blue and white"
+    else: 
+        return "grey static, empty void, quiet desolation"
+    
+
+prompt = get_prompt()
+print(prompt)
+
+```
