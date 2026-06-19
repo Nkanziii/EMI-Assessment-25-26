@@ -32,7 +32,7 @@ After this I created a moodboard based on each emotion, and created detailed pro
 
 # Summary of final version
 
-The final version of my project is a trained Ai model, that generates images, grabbed from News apis the top headlines of today, and with detailed prompting, picks the top 3 emotions with the highest score resonating to the headlines and what emotions they evoke and generates images based on this. This was a trial and error as in the beginning getting it to escape that neutral safe space was difficult to do.
+The final version of my project is a pipeline using pretrained models, that generates images, grabbed from News apis the top headlines of today, and with detailed prompting, picks the top 3 emotions with the highest score resonating to the headlines and what emotions they evoke and generates images based on this. This was a trial and error as in the beginning getting it to escape that neutral safe space was difficult to do.
 
 # Evaluation
 
