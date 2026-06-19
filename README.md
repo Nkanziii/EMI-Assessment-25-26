@@ -58,12 +58,12 @@ Something that taught me specifically about using AI critically is that AI even 
 ```
 final-project/
 ├── step-1/
-│   └── news.ipynb        # [main pipeline — This is the jupyter notebook where everything is tested]
-├── research/              # [brainstorm image]
-├── week-2/                 # [research and setting up apis and tokens]
-├── step-3/                  # [images from the image generation]
-├── step-4/                  # [more images]
-├── assets/                   # [all the images and assets i used inside the weblog]
+│   └── news.ipynb        # main pipeline — This is the jupyter notebook where everything is tested
+├── research/              # brainstorm image
+├── week-2/                 # research and setting up apis and tokens
+├── step-3/                  # images from the image generation
+├── step-4/                  # more images
+├── assets/                   # all the images and assets i used inside the weblog
 ├── README.md
 └── weblog.md
 ```
@@ -72,24 +72,34 @@ Step-1 is where the actual code resides thats the main pipleine, and step 3 is t
  
 ## Pipeline overview
  
-[Your own sentence(s) covering, in order:]
 1. Install dependencies — `transformers==4.30.0`, `diffusers==0.21.0`, `huggingface_hub==0.16.4`, `torch`
-2. Fetch headlines — NewsAPI, query: `[Mainly Iran US conflice]`
+2. Fetch headlines — NewsAPI, query: `"Iran OR protest OR conflict OR war"`
 3. Classify — each headline scored for emotion
 4. Average — scores combined into one collective state across all headlines
-5. Generate prompt — dominant emotion mapped to visual language
+5. Generate prompt — top 3 dominant emotions mapped to visual language
 6. Generate image — Stable Diffusion (`runwayml/stable-diffusion-v1-5`), saved to `output.png`
+
 ## How to run
  
 **Environment:**
-- [conda/EMI kernel, Python version]
-- Install dependencies: `[your actual pip/conda command(s)]`
+- EMI conda kernel, Python 3.10
+- Install dependencies:
+  ```
+  pip install transformers==4.30.0 diffusers==0.21.0 huggingface_hub==0.16.4
+  pip install --upgrade torch
+  ```
+
 **API key:**
 - Requires your own NewsAPI key
-- [describe how you're handling it now — env variable / .env file / etc., matching what you actually did]
+- The notebook ships with `API_KEY = ""` as an empty placeholder — paste your own NewsAPI key into this string before running the headline-fetch cell
+
 **Running the notebook:**
-- Open `news.ipynb` in [Jupyter / VS Code], select the `[kernel name]` kernel
-- [Run All / run top to bottom] — note: [your own note about the prompt-must-be-defined-before-Stable-Diffusion-cell dependency, if still relevant]
+- Open `news.ipynb` in Jupyter or VS Code, select the `emi` kernel
+- Run All — note that the `get_prompt()` function must actually be called (not just defined) before the Stable Diffusion cell runs, or the `prompt` variable will be undefined and the cell will fail
+
+# Use of other third-party resources
+
+The Stable Diffusion integration in this project was adapted from the UAL EMI course notebook `03_StableDiffusion_animations.ipynb`. The model loading and pipeline setup (loading `runwayml/stable-diffusion-v1-5` via the `diffusers` library) follows the structure of that course notebook. The prompt-construction logic — mapping the top 3 dominant emotions from the headline analysis to specific visual language — is my own work, built on top of that base setup.
 
  
 
@@ -115,7 +125,7 @@ Caramiaux, B. and Fdili Alaoui, S. (2022) '"Explorers of Unknown Planets": Pract
  
 Cole, A. (n.d.) *Kiss/Crash*. Available at: [add URL] (Accessed: [add date]).
  
-HuggingFace (n.d.) *bhadresh-savani/distilbert-base-uncased-emotion*. Available at: https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion (Accessed: 15.05.2026).
+HuggingFace (n.d.) *tabularisai/multilingual-emotion-classification*. Available at: https://huggingface.co/tabularisai/multilingual-emotion-classification (Accessed: [add date]).
  
 Ikeda, R. (n.d.) *Ryoji Ikeda*. Available at: https://www.ryojiikeda.com/ (Accessed: [add date]).
  
