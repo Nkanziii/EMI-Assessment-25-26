@@ -36,13 +36,19 @@ The final version of my project is a trained Ai model, that generates images, gr
 
 # Evaluation
 
-Has your project accomplished your objectives? How do you know? E.g., you might wish to employ some critical reflection with some illustrative examples, provide some plots or tables arising from quantitative evaluation, provide a description of some qualitative engagements with pilot audiences or users, etc. 
+My project has mostly worked, and hit the target I wanted it to so far, the pipeline did translate live headlines into images that felt emotionaly tied to the source material, not random/generic images, it felt intentionally and meaningful.
+The best best evidence is the Iran/conflice headlines run -> image with red/black, decaying, distorted face, this was genuninely striking to me it evoked fear and anger, and the colours associated with it very well. 
+Compared to my early failure with the grey-scale "neutral" outputs when the model played it safe and not indulging, even after so many tries even removing neutral as a option for emotion it was still giving me a hard time, so the growth and the colourful striking images it generated after was honestly so releaving to see. 
+Recalling back to Caramiauc, the unpredictablity of what the model produced (faces, distortion, not literal illustrations of headlines), was itself evidence the model is interpreting rather than decorating, it portrayed a visual replica of the top 3 emotions fused together, distorted, uncanny, uncomfortable, and thats what I wanted, I wanted it to produce something by itself something striking.
 
-Your evaluation may be described already in your weblog; if so, give us a high-level description along with key links to your weblog entries.
+The limitation I guess would be that it generates one image at a time, it would be cooler if it generated a animation perhaps morphing images together, this could  be something I can experiment with further, as I found this project to be really fun and rewarding to make.
+
 
 # Reflection and conclusion
 
-How do you feel about your final project, in the end? What might you do differently, or how might you continue to work on it? Etc.
+As previously mentioned, I am proud of the project I made, I am proud of overcoming the hurdle of getting the model to generate self made striking colour uncanny images to reflect the uncomfortableness that watching and reading the news headlines makes us feel. The surprising part I would sad is the first image produced after the constant neutral grayscale ones, how the model started straying away from the safe zone and opening up abit more with how it evoked and interpreted each prompt. Something new I want to try is, it would be cool if it could make a animation or a video montage of the emotions, morphing images together this is definitely something I want to evolve. 
+Something that taught me specifically about using AI critically is that AI even if trained with a certain criteria, even if you wanted to make something completely new, it is still biased it doesnt bend to your will, with the data it gathers from APIs it still gives the illusion that your not fully in control of it. 
+
 
 # Repository structure and instructions for running
 
@@ -62,13 +68,13 @@ final-project/
 └── weblog.md
 ```
  
-[1-2 sentences: which file is the actual deliverable, which folders are supporting/process documentation]
+Step-1 is where the actual code resides thats the main pipleine, and step 3 is the Image generations.
  
 ## Pipeline overview
  
 [Your own sentence(s) covering, in order:]
 1. Install dependencies — `transformers==4.30.0`, `diffusers==0.21.0`, `huggingface_hub==0.16.4`, `torch`
-2. Fetch headlines — NewsAPI, query: `[your actual query terms]`
+2. Fetch headlines — NewsAPI, query: `[Mainly Iran US conflice]`
 3. Classify — each headline scored for emotion
 4. Average — scores combined into one collective state across all headlines
 5. Generate prompt — dominant emotion mapped to visual language
@@ -84,10 +90,8 @@ final-project/
 **Running the notebook:**
 - Open `news.ipynb` in [Jupyter / VS Code], select the `[kernel name]` kernel
 - [Run All / run top to bottom] — note: [your own note about the prompt-must-be-defined-before-Stable-Diffusion-cell dependency, if still relevant]
-## Current scope
- 
-[Your own 2-3 sentences: what works end-to-end, what's out of scope — e.g. single image per run, no batch/video output, prompt mapping is hand-designed rather than learned]
 
+ 
 
 # Statement on use of AI tools (draft — review and edit to match your actual usage before submitting)
  
