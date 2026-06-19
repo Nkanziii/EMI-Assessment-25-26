@@ -113,7 +113,7 @@ I used Claude (Anthropic) throughout the development of this project's code, pri
 - Adjusting Stable Diffusion generation parameters (adding a `negative_prompt` and increasing `guidance_scale`) to resolve an issue where outputs defaulted to greyscale/monochrome.
 - General planning support: breaking the project into a weekly schedule with milestones, and discussing how to frame the project's critical use of AI in relation to Caramiaux & Fdili Alaoui's (2022) framework.
 - CV/LinkedIn wording support for describing this project professionally (not part of the academic submission itself).
-I did not use Claude or any other AI tool to write the weblog entries or this readme document; those were written by me. Where I asked Claude for help structuring this readme, I used bullet-point prompts and wrote the prose myself.
+I did not use Claude or any other AI tool to write the weblog entries or this readme document; those were written by me.
  
 ---
 
