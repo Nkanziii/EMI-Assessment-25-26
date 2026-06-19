@@ -305,4 +305,8 @@ Prompt: a dark dissolving figure consumed by red smoke, blurred and fractured fo
 
 <h2>Entry 9</h2>
 
-creating the video
+Gathering news headlines
+
+<h2>Entry 10</h2>
+
+creating the video 
