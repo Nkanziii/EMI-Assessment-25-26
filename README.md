@@ -32,7 +32,7 @@ After this I created a moodboard based on each emotion, and created detailed pro
 
 # Summary of final version
 
-The final version of my project is a pipeline using pretrained models, that generates images, grabbed from News apis the top headlines of today, and with detailed prompting, picks the top 3 emotions with the highest score resonating to the headlines and what emotions they evoke and generates images based on this. This was a trial and error as in the beginning getting it to escape that neutral safe space was difficult to do.
+The final version of my project is a pipeline using pretrained Ai models, that generates images, grabbed from News apis the top headlines of today, and with detailed prompting, picks the top 3 emotions with the highest score resonating to the headlines and what emotions they evoke and generates images based on this. This was a trial and error as in the beginning getting it to escape that neutral safe space was difficult to do.
 
 # Evaluation
 
@@ -119,17 +119,19 @@ I did not use Claude or any other AI tool to write the weblog entries or this re
 
 # References
 
-Anadol, R. (n.d.) *Refik Anadol Studio*. Available at: https://refikanadol.com/ (Accessed: [add date]).
+Anadol, R. (n.d.) *Refik Anadol Studio*. Available at: https://refikanadol.com/ (Accessed: 12.05.2026).
  
-Caramiaux, B. and Fdili Alaoui, S. (2022) '"Explorers of Unknown Planets": Practices and Politics of Artificial Intelligence in Visual Arts', in *Proceedings of the 2022 ACM Designing Interactive Systems Conference*. New York: ACM, pp. [add page numbers].
+Caramiaux, B. and Fdili Alaoui, S. (2022) '"Explorers of Unknown Planets": Practices and Politics of Artificial Intelligence in Visual Arts', in *Proceedings of the 2022 ACM Designing Interactive Systems Conference*. New York: ACM.
  
-Cole, A. (n.d.) *Kiss/Crash*. Available at: [add URL] (Accessed: [add date]).
+Cole, A. (2026) *Kiss/Crash*. [Lecture]. Engaged Machine Learning, University of the Arts London. [add exact lecture date].
  
-HuggingFace (n.d.) *tabularisai/multilingual-emotion-classification*. Available at: https://huggingface.co/tabularisai/multilingual-emotion-classification (Accessed: [add date]).
+HuggingFace (n.d.) *tabularisai/multilingual-emotion-classification*. Available at: https://huggingface.co/tabularisai/multilingual-emotion-classification (Accessed: 12.05.2026).
  
-Ikeda, R. (n.d.) *Ryoji Ikeda*. Available at: https://www.ryojiikeda.com/ (Accessed: [add date]).
+Ikeda, R. (n.d.) *Ryoji Ikeda*. Available at: https://www.ryojiikeda.com/ (Accessed: 12.05.2026).
  
 NewsAPI (n.d.) *NewsAPI.org*. Available at: https://newsapi.org/ (Accessed: 18.05.2026).
+ 
+University of the Arts London (2026) *03_StableDiffusion_animations.ipynb*. [Course notebook]. Engaged Machine Learning, University of the Arts London.
 
 
 
