@@ -1,27 +1,29 @@
 # EMI-Assessment-25-26
 
-*Please use this template for your readme describing the final version of your project.*
 
-*You can edit this file directly on git.arts.ac.uk in your browser, or you can do it in VS code or another markdown editor, then commit to your repo.*
+# The news as a Nervous system
 
-*You can make this file look nice by using markdown syntax. You can [read more about markdown here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).*
+[Weblog Link](weblog.md) 
 
-*To include images in this file, follow the [instructions here](https://cloudinary.com/guides/web-performance/4-ways-to-add-images-to-github-readme-1-bonus-method#:~:text=Open%20the%20folder%20containing%20the,you%20want%20it%20to%20appear.&text=Click%20Preview%20to%20see%20how,README%20with%20the%20new%20image.).*
-
-
-# Your Project Title Here
-
-[Your Weblog Link goes here](weblog.md) (Please edit weblog.md to create your weblog or link to another site)
-
-Link to video: [Your URL here, e.g. a youtube link](http://arts.ac.uk)
+Link to video: [link](http://arts.ac.uk)
 
 # Introduction
 
-Include a brief statement of your motivation and your main objectives for the final version of your project.
+ This project explores how news cycles shape a collective emotional and political state. Especially for ethnic minority groups in the western society. As someone who has dual nationality and is originally from Iran, with the current state of the world I have seen how the news has such a big emotionaly impact on my family and other Iranian British citizens. Especially when we still have family and people we love in our home country that are living under bomb strikes and terror, with out the peace of mind that their government is protecting them, or with a route to escape.
+
+ The objective was to builf a pipeline that makes that emotional undercurrent visible, turing live headlines into an abstract visual signal, interpreted completly by the model dependent on the prompts i give for each emotion. 
+ Using ML to interrogate/expose a process, not just automate a task.
+
 
 # Related technical and/or creative work
 
-Related works should be cited and inserted in the References section at the end of the readme.
+**Refik Anadol:** Data-driven, large-scale generative visualization of collective/environmental data.
+
+**Ryoji Ikeda:** Abstraction of data into a preceptual/sensory experience.
+
+**Adam Cole, Kiss/Crash:** A project where A trained ai model, reflects human intamacy and kisses, after a car crash.
+
+**Caramiaux & Fdili Alaoui(2022):** theoretical anchor: categorizing how artists use AI (critically vs. instrumentally).
 
 # Summary of design and development process
 
@@ -43,29 +45,76 @@ How do you feel about your final project, in the end? What might you do differen
 
 # Repository structure and instructions for running
 
-Please briefly explain the contents of this repository. Which files do what?
+ 
+## Repository structure
+ 
+```
+final-project/
+├── step-1/
+│   └── news.ipynb        # [main pipeline — This is the jupyter notebook where everything is tested]
+├── research/              # [brainstorm image]
+├── week-2/                 # [research and setting up apis and tokens]
+├── step-3/                  # [images from the image generation]
+├── step-4/                  # [more images]
+├── assets/                   # [all the images and assets i used inside the weblog]
+├── README.md
+└── weblog.md
+```
+ 
+[1-2 sentences: which file is the actual deliverable, which folders are supporting/process documentation]
+ 
+## Pipeline overview
+ 
+[Your own sentence(s) covering, in order:]
+1. Install dependencies — `transformers==4.30.0`, `diffusers==0.21.0`, `huggingface_hub==0.16.4`, `torch`
+2. Fetch headlines — NewsAPI, query: `[your actual query terms]`
+3. Classify — each headline scored for emotion
+4. Average — scores combined into one collective state across all headlines
+5. Generate prompt — dominant emotion mapped to visual language
+6. Generate image — Stable Diffusion (`runwayml/stable-diffusion-v1-5`), saved to `output.png`
+## How to run
+ 
+**Environment:**
+- [conda/EMI kernel, Python version]
+- Install dependencies: `[your actual pip/conda command(s)]`
+**API key:**
+- Requires your own NewsAPI key
+- [describe how you're handling it now — env variable / .env file / etc., matching what you actually did]
+**Running the notebook:**
+- Open `news.ipynb` in [Jupyter / VS Code], select the `[kernel name]` kernel
+- [Run All / run top to bottom] — note: [your own note about the prompt-must-be-defined-before-Stable-Diffusion-cell dependency, if still relevant]
+## Current scope
+ 
+[Your own 2-3 sentences: what works end-to-end, what's out of scope — e.g. single image per run, no batch/video output, prompt mapping is hand-designed rather than learned]
 
-Please also include brief instructions for how to run your project code. For instance, if we need to make a new environment or install new libraries, please give instructions here. If your project is run from the command line, tell us what command to use. Even if it's not possible for us to run your project code ourselves (e.g., because it relies on specialised sensors or a particular performance space), do your best to document how **you** run it.
 
-# Use of external resources
-*The two subsections below are necessary for us to understand what is your own original work and what was contributed by an LLM or other people (e.g., from open-source examples or tutorials online). If we suspect you have used LLMs or other third-party code in your project code or your writing, but you have tried to claim it all as your own work, your grade could be negatively impacted, or worse you will have to deal with an academic misconduct investigation.*
-
-## Statement on use of AI tools
-Please state in this section whether you have used any assistive AI tools such as LLMs or AI coding tools in your project, including in brainstorming, design, implementation, or other activities. **(Please do not use AI to generate any part of your weblog or this readme file.)** If you have used AI at all, please state which AI tools you’ve used and describe exactly how you have used these tools for assistance. (Ideally, you will already have written about this in your weblog; it is fine to just refer to your weblog in this section if it is already clearly described there.) If you have not used assistive AI tools at all, please state this.
-
-## Use of other third-party resources
-Please state whether you have used other third-party code, tutorials, examples, etc. which you did not write yourself. Please provide URLs and a brief explanation of how you have used or adapted this code in your own work. If you are in doubt about whether you should mention something here, please include it, or talk to an instructor.
+# Statement on use of AI tools (draft — review and edit to match your actual usage before submitting)
+ 
+I used Claude (Anthropic) throughout the development of this project's code, primarily as a guided problem-solving aid rather than a code-generation tool. Specific uses included:
+ 
+- Debugging Python/library version conflicts between `transformers` and the EMI kernel's pinned `torch` version, which I resolved by pinning `transformers==4.30.0`.
+- Working through logic for averaging emotion classifier outputs across multiple headlines into a single collective score, where Claude asked guiding questions about my looping approach rather than supplying the solution directly.
+- Troubleshooting notebook execution order issues (e.g. a Stable Diffusion cell failing because an upstream `prompt` variable hadn't been defined yet), and identifying that my `get_prompt()` function was defined but never called.
+- Adjusting Stable Diffusion generation parameters (adding a `negative_prompt` and increasing `guidance_scale`) to resolve an issue where outputs defaulted to greyscale/monochrome.
+- General planning support: breaking the project into a weekly schedule with milestones, and discussing how to frame the project's critical use of AI in relation to Caramiaux & Fdili Alaoui's (2022) framework.
+- CV/LinkedIn wording support for describing this project professionally (not part of the academic submission itself).
+I did not use Claude or any other AI tool to write the weblog entries or this readme document; those were written by me. Where I asked Claude for help structuring this readme, I used bullet-point prompts and wrote the prose myself.
+ 
+---
 
 # References
 
-*This is where you put a list of prior work referened in this readme. All your references included below should be cited in the readme text above, using the (Author, Date) format. You should use Harvard referencing for this section. For more information see [Cite them right](https://www.citethemrightonline.com/) or contact [UAL Academic support](https://www.arts.ac.uk/students/library-services/academic-support) for help with academic writing skills. Example references in Harvard style are below – see more at [https://library-guides.ucl.ac.uk/harvard/referenceslist](https://library-guides.ucl.ac.uk/harvard/)*
+Anadol, R. (n.d.) *Refik Anadol Studio*. Available at: https://refikanadol.com/ (Accessed: [add date]).
+ 
+Caramiaux, B. and Fdili Alaoui, S. (2022) '"Explorers of Unknown Planets": Practices and Politics of Artificial Intelligence in Visual Arts', in *Proceedings of the 2022 ACM Designing Interactive Systems Conference*. New York: ACM, pp. [add page numbers].
+ 
+Cole, A. (n.d.) *Kiss/Crash*. Available at: [add URL] (Accessed: [add date]).
+ 
+HuggingFace (n.d.) *bhadresh-savani/distilbert-base-uncased-emotion*. Available at: https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion (Accessed: 15.05.2026).
+ 
+Ikeda, R. (n.d.) *Ryoji Ikeda*. Available at: https://www.ryojiikeda.com/ (Accessed: [add date]).
+ 
+NewsAPI (n.d.) *NewsAPI.org*. Available at: https://newsapi.org/ (Accessed: 18.05.2026).
 
-Bloggs, J. (2013). 'The key issue'. [Cartoon]. *The Times*, 20 January, p.56.
-
-
-
-[newsapi.org](https://newsapi.org/) [Accessed on 18.05.2026]
-
-[HuggingFace](https://huggingface.co/tabularisai/multilingual-emotion-classification) [accessed 15.05.2026]
 
 
