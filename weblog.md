@@ -248,6 +248,7 @@ Breakthrough!!
   This one is quite disturbing and freaky looking i kind of like it.
 </p>
 
+<h2>Entry 8</h2>
 
 <p align='center'>
   <img src="assets/step-3/image-6.jpg"/>
@@ -297,3 +298,7 @@ print(prompt)
 Top emotions: ['neutral', 'anger', 'sadness']
 Prompt: a dark dissolving figure consumed by red smoke, blurred and fractured form, deep crimson and black, violent motion, abstract painterly style, dramatic lighting, no text, vivid colours, a face dissolving into darkness, tears streaming down, black and white, high contrast, raw grief, cinematic portrait, dramatic shadow, no text, highly detailed, melancholic, a rotting pomegranate split open, decaying organic matter, mould spreading across the surface, toxic green and deep red, visceral and repulsive, macro photography, dramatic lighting, no text, vivid colours, no text, no watermark, vivid colours, dramatic lighting
 ```
+
+<h2>Entry 9</h2>
+
+creating the video
