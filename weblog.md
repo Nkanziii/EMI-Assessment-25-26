@@ -116,7 +116,7 @@ The output after running the the code block, creating a prompt for the image gen
 
 </p>
 
-<h2>Entery 5 (17th june 2026)</h2>
+<h2>Entery 5 (12th june 2026)</h2>
 
 In todays session, I went through 03_StableDiffusion_animation.ipynb, to generate my propmts from the my previous step into images. The current prompt is:
 
@@ -159,7 +159,7 @@ Library version conflicts between diffusers, transformers, and huggingface_hub c
 
 The reward, after all of that, the full pipeline ran end to end for the first time. Live news headlines -> emotion classification -> averaged scores -> prompt generation -> Stable Diffusion image. The output was a grey desolate abstract image, matching the 'neutral' dominant emotion of today's news cycle.
 
-<h2>Entry 6</h2>
+<h2>Entry 6: 13th june 2026</h2>
 
 <h3>Generating different images based on prompts</h3>
 
@@ -199,7 +199,7 @@ def get_prompt():
 
 An observation i found is that the model keeps printing the news headlines as neutrsl, as if it doesnt want to induldge in reality of the news, I dont like this, because majority of the time the news is not neutral, I removed that emotion to see what it calculates if it doesnt have neutral as an option.
 
-<h2>Entry 7</h2>
+<h2>Entry 7: 15th june 2026</h2>
 
 <h4>Changing the prompt</h4>
 
@@ -246,7 +246,7 @@ Breakthrough!!
   This one is quite disturbing and freaky looking i kind of like it.
 </p>
 
-<h2>Entry 8</h2>
+<h2>Entry 8: 16th june 2026</h2>
 
 <p align='center'>
   <img src="assets/step-3/image-6.jpg"/>
@@ -301,10 +301,10 @@ Top emotions: ['neutral', 'anger', 'sadness']
 Prompt: a dark dissolving figure consumed by red smoke, blurred and fractured form, deep crimson and black, violent motion, abstract painterly style, dramatic lighting, no text, vivid colours, a face dissolving into darkness, tears streaming down, black and white, high contrast, raw grief, cinematic portrait, dramatic shadow, no text, highly detailed, melancholic, a rotting pomegranate split open, decaying organic matter, mould spreading across the surface, toxic green and deep red, visceral and repulsive, macro photography, dramatic lighting, no text, vivid colours, no text, no watermark, vivid colours, dramatic lighting
 ```
 
-<h2>Entry 9</h2>
+<h2>Entry 9: 17th june 2026</h2>
 
 Gathering news headlines
 
-<h2>Entry 10</h2>
+<h2>Entry 10: 18th june 2026</h2>
 
 creating the video 
