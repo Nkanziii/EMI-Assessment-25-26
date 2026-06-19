@@ -27,11 +27,12 @@ Link to video: [link](http://arts.ac.uk)
 
 # Summary of design and development process
 
-Most of this will be in your weblog. Please give a very high-level summary here (about 1 paragraph) along with key links to your weblog entries. Consider including some key images, diagrams, etc.
+In the beginning, the design process was very simple and surface level, the main emotions being: fear, anger, sadness, surprised, joy, disgust and fear, and each emotion has a score level based on the emotion model API i grabbed from hugging face. Based on the prompt recieved associated with each emotion the model will generate an image. In the beginning the image generated very dull, abstract colours in gray scale, which contributed to the theme of neutral, meaning the AI model viewed every headline as neutral. I then changed this narrative so it takes, 3 different top emotions and creates an image based on that, which in the beginning I associated anger disgust and fear and rotting fruit and the colour red. 
+After this I created a moodboard based on each emotion, and created detailed prompts for the ai model to generate the image. And with the prompt the model became more and more specific and showing faces, bit distorted and creapy.
 
 # Summary of final version
 
-What does the "final" version of your project look like, at the time of submission? What is its scope? For instance, what works, what does not? Feel free to link to your weblog entries if this is described in more detail there.
+The final version of my project is a trained Ai model, that generates images, grabbed from News apis the top headlines of today, and with detailed prompting, picks the top 3 emotions with the highest score resonating to the headlines and what emotions they evoke and generates images based on this. This was a trial and error as in the beginning getting it to escape that neutral safe space was difficult to do.
 
 # Evaluation
 
