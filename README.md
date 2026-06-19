@@ -9,9 +9,9 @@ Link to video: [link](http://arts.ac.uk)
 
 # Introduction
 
- This project explores how news cycles shape a collective emotional and political state. Especially for ethnic minority groups in the western society. As someone who has dual nationality and is originally from Iran, with the current state of the world I have seen how the news has such a big emotionaly impact on my family and other Iranian British citizens. Especially when we still have family and people we love in our home country that are living under bomb strikes and terror, with out the peace of mind that their government is protecting them, or with a route to escape.
+ This project explores how news cycles shape a collective emotional and political state. Especially for ethnic minority groups in the western society. As someone who has dual nationality and is originally from Iran, with the current state of the world I have seen how the news has such a big emotionally impact on my family and other Iranian British citizens. Especially when we still have family and people we love in our home country that are living under bomb strikes and terror, with out the peace of mind that their government is protecting them, or with a route to escape.
 
- The objective was to builf a pipeline that makes that emotional undercurrent visible, turing live headlines into an abstract visual signal, interpreted completly by the model dependent on the prompts i give for each emotion. 
+ The objective was to build a pipeline that makes that emotional undercurrent visible, turning live headlines into an abstract visual signal, interpreted completely by the model dependent on the prompts i give for each emotion. 
  Using ML to interrogate/expose a process, not just automate a task.
 
 
@@ -19,16 +19,16 @@ Link to video: [link](http://arts.ac.uk)
 
 **Refik Anadol:** Data-driven, large-scale generative visualization of collective/environmental data.
 
-**Ryoji Ikeda:** Abstraction of data into a preceptual/sensory experience.
+**Ryoji Ikeda:** Abstraction of data into a perceptual/sensory experience.
 
-**Adam Cole, Kiss/Crash:** A project where A trained ai model, reflects human intamacy and kisses, after a car crash.
+**Adam Cole, Kiss/Crash:** A project where a trained ai model reflects human intimacy and kisses, after a car crash.
 
-**Caramiaux & Fdili Alaoui(2022):** theoretical anchor: categorizing how artists use AI (critically vs. instrumentally).
+**Caramiaux & Fdili Alaoui (2022):** theoretical anchor: categorizing how artists use AI (critically vs. instrumentally).
 
 # Summary of design and development process
 
-In the beginning, the design process was very simple and surface level, the main emotions being: fear, anger, sadness, surprised, joy, disgust and fear, and each emotion has a score level based on the emotion model API i grabbed from hugging face. Based on the prompt recieved associated with each emotion the model will generate an image. In the beginning the image generated very dull, abstract colours in gray scale, which contributed to the theme of neutral, meaning the AI model viewed every headline as neutral. I then changed this narrative so it takes, 3 different top emotions and creates an image based on that, which in the beginning I associated anger disgust and fear and rotting fruit and the colour red. 
-After this I created a moodboard based on each emotion, and created detailed prompts for the ai model to generate the image. And with the prompt the model became more and more specific and showing faces, bit distorted and creapy.
+In the beginning, the design process was very simple and surface level, the main emotions being: fear, anger, sadness, surprised, joy, disgust and fear, and each emotion has a score level based on the emotion model API i grabbed from hugging face. Based on the prompt received associated with each emotion the model will generate an image. In the beginning the image generated very dull, abstract colours in gray scale, which contributed to the theme of neutral, meaning the AI model viewed every headline as neutral. I then changed this narrative so it takes, 3 different top emotions and creates an image based on that, which in the beginning I associated anger disgust and fear and rotting fruit and the colour red. 
+After this I created a moodboard based on each emotion, and created detailed prompts for the ai model to generate the image. And with the prompt the model became more and more specific and showing faces, bit distorted and creepy.
 
 # Summary of final version
 
@@ -36,10 +36,10 @@ The final version of my project is a pipeline using pretrained Ai models, that g
 
 # Evaluation
 
-My project has mostly worked, and hit the target I wanted it to so far, the pipeline did translate live headlines into images that felt emotionaly tied to the source material, not random/generic images, it felt intentionally and meaningful.
-The best best evidence is the Iran/conflice headlines run -> image with red/black, decaying, distorted face, this was genuninely striking to me it evoked fear and anger, and the colours associated with it very well. 
-Compared to my early failure with the grey-scale "neutral" outputs when the model played it safe and not indulging, even after so many tries even removing neutral as a option for emotion it was still giving me a hard time, so the growth and the colourful striking images it generated after was honestly so releaving to see. 
-Recalling back to Caramiauc, the unpredictablity of what the model produced (faces, distortion, not literal illustrations of headlines), was itself evidence the model is interpreting rather than decorating, it portrayed a visual replica of the top 3 emotions fused together, distorted, uncanny, uncomfortable, and thats what I wanted, I wanted it to produce something by itself something striking.
+My project has mostly worked, and hit the target I wanted it to so far, the pipeline did translate live headlines into images that felt emotionally tied to the source material, not random/generic images, it felt intentionally and meaningful.
+The best evidence is the Iran/conflict headlines run -> image with red/black, decaying, distorted face, this was genuinely striking to me it evoked fear and anger, and the colours associated with it very well. 
+Compared to my early failure with the grey-scale "neutral" outputs when the model played it safe and not indulging, even after so many tries even removing neutral as a option for emotion it was still giving me a hard time, so the growth and the colourful striking images it generated after was honestly so relieving to see. 
+Recalling back to Caramiaux, the unpredictability of what the model produced (faces, distortion, not literal illustrations of headlines), was itself evidence the model is interpreting rather than decorating, it portrayed a visual replica of the top 3 emotions fused together, distorted, uncanny, uncomfortable, and thats what I wanted, I wanted it to produce something by itself something striking.
 
 The limitation I guess would be that it generates one image at a time, it would be cooler if it generated a animation perhaps morphing images together, this could  be something I can experiment with further, as I found this project to be really fun and rewarding to make.
 
@@ -68,7 +68,7 @@ final-project/
 └── weblog.md
 ```
  
-Step-1 is where the actual code resides thats the main pipleine, and step 3 is the Image generations.
+Step-1 is where the actual code resides thats the main pipeline, and step 3 is the Image generations.
  
 ## Pipeline overview
  
@@ -103,7 +103,7 @@ The Stable Diffusion integration in this project was adapted from the UAL EMI co
 
  
 
-# Statement on use of AI tools (draft — review and edit to match your actual usage before submitting)
+# Statement on use of AI tools
  
 I used Claude (Anthropic) throughout the development of this project's code, primarily as a guided problem-solving aid rather than a code-generation tool. Specific uses included:
  
@@ -113,7 +113,8 @@ I used Claude (Anthropic) throughout the development of this project's code, pri
 - Adjusting Stable Diffusion generation parameters (adding a `negative_prompt` and increasing `guidance_scale`) to resolve an issue where outputs defaulted to greyscale/monochrome.
 - General planning support: breaking the project into a weekly schedule with milestones, and discussing how to frame the project's critical use of AI in relation to Caramiaux & Fdili Alaoui's (2022) framework.
 - CV/LinkedIn wording support for describing this project professionally (not part of the academic submission itself).
-I did not use Claude or any other AI tool to write the weblog entries or this readme document; those were written by me.
+- Structuring this readme: I described what had actually happened in my project, and Claude turned that into section headings and bullet points covering the right factual details (e.g. dependency versions, file structure, run order). I then wrote the final sentences and all reflective/evaluative content (Introduction, Evaluation, Reflection and conclusion) myself.
+I did not use Claude or any other AI tool to write the weblog entries; those were written entirely by me.
  
 ---
 
@@ -123,7 +124,7 @@ Anadol, R. (n.d.) *Refik Anadol Studio*. Available at: https://refikanadol.com/ 
  
 Caramiaux, B. and Fdili Alaoui, S. (2022) '"Explorers of Unknown Planets": Practices and Politics of Artificial Intelligence in Visual Arts', in *Proceedings of the 2022 ACM Designing Interactive Systems Conference*. New York: ACM.
  
-Cole, A. (2026) *Kiss/Crash*. [Lecture]. Engaged Machine Learning, University of the Arts London. [add exact lecture date].
+Cole, A. (2026) *Kiss/Crash*. [Lecture]. Engaged Machine Learning, University of the Arts London.
  
 HuggingFace (n.d.) *tabularisai/multilingual-emotion-classification*. Available at: https://huggingface.co/tabularisai/multilingual-emotion-classification (Accessed: 12.05.2026).
  
