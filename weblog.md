@@ -267,6 +267,10 @@ I thought i had a breakthrough but it still uses neutral however, neutral doesnt
 
 I created a moodboard based on the emotions i found, and i adjusted the code prompt based on the images of the moodboard:
 
+<p>
+  <img src="assets/step-4/moodboard.png"/>
+</p>
+
 ```
 def get_prompt():
     top_emotions = sorted(all_scores, key=all_scores.get, reverse=True)
