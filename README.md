@@ -5,7 +5,7 @@
 
 [Weblog Link](weblog.md) 
 
-Link to video: [link](https://ual.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ed160ba6-b680-4ac5-874b-b471014e00c3)
+Link to video: [link](https://youtu.be/PBWDdoYrHhE)
 
 # Introduction
 
